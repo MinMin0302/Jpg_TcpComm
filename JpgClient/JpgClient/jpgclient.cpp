@@ -17,7 +17,7 @@ int main() {
     // Winsock 초기화
     if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0) {
         std::cerr << "Winsock 초기화 실패. 오류 코드 : " << WSAGetLastError() << std::endl;
-        return 1;
+        return 1;//
     }
 
     // 소켓 생성
